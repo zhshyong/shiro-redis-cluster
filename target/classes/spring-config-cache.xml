@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- jedis cluster config -->
+    <bean name="genericObjectPoolConfig" class="org.apache.commons.pool2.impl.GenericObjectPoolConfig" >
+        <property name="maxWaitMillis" value="-1" />
+        <property name="maxTotal" value="1000" />
+        <property name="minIdle" value="8" />
+        <property name="maxIdle" value="100" />
+    </bean>
+
+    <bean id="jedisCluster" class="org.crazycake.shiro.JedisClusterFactory">
+        <property name="addressConfig">
+            <value>classpath:/redis-config.properties</value>
+        </property>
+        <property name="addressKeyPrefix" value="address" />
+
+        <property name="timeout" value="300000"/>
+        <property name="maxRedirections" value="6" />
+        <property name="genericObjectPoolConfig" ref="genericObjectPoolConfig" />
+    </bean>
+    <bean id="redisManager" class="org.crazycake.shiro.RedisManager">
+        <property name="jedisCluster" ref="jedisCluster"/>
+        <property name="redisOperator" ref="redisOperator"/>
+        <property name="expire" value="1800"/>
+    </bean>
+    <bean id="redisOperator" class="org.crazycake.shiro.RedisOperator">
+        <property name="jedisCluster" ref="jedisCluster"/>
+    </bean>
+    <!-- cacheManager -->
+    <bean id="redisCacheManager" class="org.crazycake.shiro.RedisCacheManager">
+        <property name="redisManager" ref="redisManager" />
+    </bean>
+
+    <!--  redisCache  -->
+    <bean id="redisCache" class="org.crazycake.shiro.RedisCache">
+        <constructor-arg ref="redisManager"></constructor-arg>
+    </bean>
+</beans>

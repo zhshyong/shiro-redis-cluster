@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework:spring-context-support:4.2.5.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/4.2.5.RELEASE/spring-context-support-4.2.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/4.2.5.RELEASE/spring-context-support-4.2.5.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://C:/Program Files/Java/jdk1.6.0_45" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/4.2.5.RELEASE/spring-context-support-4.2.5.RELEASE-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files/Java/jdk1.6.0_45" recursive="false" type="SOURCES" />
+  </library>
+</component>
