@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPool;
 import java.util.*;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class RedisOperator implements IRedisOperator {
   public final static Logger logger = LoggerFactory.getLogger(RedisOperator.class);
@@ -59,7 +59,7 @@ public class RedisOperator implements IRedisOperator {
         logger.error("Getting keys error: {}", e);
       } finally{
         logger.debug("Connection closed.");
-        connection.close();//用完一定要close这个链接！！！
+        connection.close();
       }
     }
     logger.debug("flushDB");

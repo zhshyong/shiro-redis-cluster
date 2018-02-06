@@ -1,12 +1,12 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
 import java.util.TreeSet;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public interface IRedisOperator {
   /**

@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class SerializeUtils {
 	

@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 import org.crazycake.shiro.RedisCache;
 import org.crazycake.shiro.RedisManager;
@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class AppTest {
   private ApplicationContext sContext;

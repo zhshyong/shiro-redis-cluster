@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class RedisCacheManager implements CacheManager {
 

@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -8,7 +8,7 @@ import redis.clients.jedis.JedisCluster;
 import java.util.TreeSet;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class RedisManager {
 

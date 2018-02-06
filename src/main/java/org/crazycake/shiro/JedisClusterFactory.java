@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class JedisClusterFactory implements FactoryBean<JedisCluster>, InitializingBean {
 

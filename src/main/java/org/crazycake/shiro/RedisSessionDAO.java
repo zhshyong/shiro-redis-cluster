@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 asiainfo Inc.
+ * Copyright 2017 Inc.
  **/
 package org.crazycake.shiro;
 
@@ -13,7 +13,7 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * @author zhangsy
+ * @author zhangshaoyong
  */
 public class RedisSessionDAO extends AbstractSessionDAO {
 
